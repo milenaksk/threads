@@ -25,7 +25,7 @@ public class AcaoBotao implements ActionListener {
 
 
 		Runnable tarefa = new TarefaMultiplicacao(primeiro, segundo, resultado);
-		Thread threadCalculo = new Thread(tarefa);
+		Thread threadCalculo = new Thread(tarefa, "Thread Calculador");
 		threadCalculo.start();
 
 
